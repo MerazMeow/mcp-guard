@@ -1,0 +1,53 @@
+{
+  "name": "mcp-guard",
+  "version": "0.1.0",
+  "description": "Zero-dependency local security firewall, secret redactor, and audit inspector for MCP (Model Context Protocol) servers.",
+  "type": "module",
+  "bin": {
+    "mcp-guard": "./bin/mcp-guard.js"
+  },
+  "main": "./src/proxy.js",
+  "exports": {
+    ".": "./src/proxy.js",
+    "./policy": "./src/policy.js",
+    "./redactor": "./src/redactor.js",
+    "./audit": "./src/audit.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node ./bin/mcp-guard.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-security",
+    "firewall",
+    "proxy",
+    "redaction",
+    "audit",
+    "llm",
+    "agents",
+    "cli"
+  ],
+  "author": "Meraz Faisal Siddiqui <meraz.siddiquibd@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MerazMeow/mcp-guard.git"
+  },
+  "homepage": "https://github.com/MerazMeow/mcp-guard#readme",
+  "bugs": {
+    "url": "https://github.com/MerazMeow/mcp-guard/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

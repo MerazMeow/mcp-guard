@@ -1,0 +1,5 @@
+node_modules/
+.mcp-guard/
+*.log
+.DS_Store
+mcp-guard.local.json
