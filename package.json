@@ -1,10 +1,10 @@
 {
-  "name": "mcp-guard",
+  "name": "@merazmeow/mcp-guard",
   "version": "0.1.0",
   "description": "Zero-dependency local security firewall, secret redactor, and audit inspector for MCP (Model Context Protocol) servers.",
   "type": "module",
   "bin": {
-    "mcp-guard": "./bin/mcp-guard.js"
+    "mcp-guard": "bin/mcp-guard.js"
   },
   "main": "./src/proxy.js",
   "exports": {

@@ -24,7 +24,7 @@
 ### 1. Create a policy file
 
 ```bash
-npx mcp-guard init --preset strict
+npx @merazmeow/mcp-guard init --preset strict
 ```
 
 Available presets:
@@ -37,7 +37,7 @@ Available presets:
 Generate a ready-to-paste `mcpServers` block for Claude Desktop, Cursor, or any MCP client:
 
 ```bash
-npx mcp-guard wrap --name filesystem -- npx -y @modelcontextprotocol/server-filesystem .
+npx @merazmeow/mcp-guard wrap --name filesystem -- npx -y @modelcontextprotocol/server-filesystem .
 ```
 
 Output:
@@ -49,7 +49,7 @@ Output:
       "command": "npx",
       "args": [
         "-y",
-        "mcp-guard",
+        "@merazmeow/mcp-guard",
         "proxy",
         "--",
         "npx",
@@ -66,11 +66,11 @@ Output:
 
 ```bash
 # Terminal summary + recent calls
-npx mcp-guard logs --tail 20
-npx mcp-guard logs --denied-only
+npx @merazmeow/mcp-guard logs --tail 20
+npx @merazmeow/mcp-guard logs --denied-only
 
 # Local web dashboard (http://127.0.0.1:4317)
-npx mcp-guard ui
+npx @merazmeow/mcp-guard ui
 ```
 
 ---
@@ -143,7 +143,7 @@ Proxy options:
 You can also embed the policy & inspection engine directly inside custom Node.js MCP tooling:
 
 ```js
-import { createGuardSession } from 'mcp-guard';
+import { createGuardSession } from '@merazmeow/mcp-guard';
 
 const session = createGuardSession({
   policy: {

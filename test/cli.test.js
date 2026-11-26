@@ -78,7 +78,7 @@ test('CLI init, check, logs, and wrap work end-to-end', async () => {
   assert.equal(wrapped.mcpServers.filesystem.command, 'npx');
   assert.deepEqual(wrapped.mcpServers.filesystem.args, [
     '-y',
-    'mcp-guard',
+    '@merazmeow/mcp-guard',
     'proxy',
     '--',
     'npx',

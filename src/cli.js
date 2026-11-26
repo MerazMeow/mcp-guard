@@ -76,7 +76,7 @@ function parseFlags(args) {
 }
 
 export function formatWrapConfig({ name = 'guarded-server', policyPath, upstreamArgs }) {
-  const proxyArgs = ['-y', 'mcp-guard', 'proxy'];
+  const proxyArgs = ['-y', '@merazmeow/mcp-guard', 'proxy'];
   if (policyPath) {
     proxyArgs.push('--policy', policyPath);
   }
